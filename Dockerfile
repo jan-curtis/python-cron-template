@@ -8,8 +8,8 @@ RUN apt-get update \
 
 WORKDIR /root
 RUN mkdir workspace
-COPY ./ ./workspace/
-RUN cat ./workspace/requirements.txt
+COPY ./scripts ./workspace/scripts
+COPY ./requirements.txt ./workspace/requirements.txt
 RUN pip install -qr ./workspace/requirements.txt
 RUN chmod a+x ./workspace/scripts/main_script.py
 

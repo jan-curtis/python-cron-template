@@ -1,0 +1,1 @@
+* * * * * root /usr/local/bin/python3 /root/workspace/scripts/main_script.py >> /var/log/main_script.log 2>&1

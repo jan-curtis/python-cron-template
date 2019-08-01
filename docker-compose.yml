@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+    python-cron-template-service:
+        build: .
+        volumes:
+            - ./logs:/var/log
